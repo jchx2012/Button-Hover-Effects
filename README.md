@@ -20,29 +20,30 @@
     </pre>
     <pre>
         <p>最后一个按钮的JS</p>
-        $(function () {
-            $('.btn-13-js').on('mouseenter', function (e) {
-                var parentOffset = $(this).offset(), relX = e.pageX - parentOffset.left, relY = e.pageY - parentOffset.top;
-                console.log(parentOffset);
-                /**
-                 * $(this).offset()当前对象相对于整个页面(body)的上边和左边的固定偏移值：Object {top: 692, left: 757.84375}
-                 * e.pageX鼠标相对于当前页面的x坐标值：变化的值
-                 * e.pageY鼠标相对于当前页面的y坐标值：变化的值
-                 *
-                 */
-                console.log(e.pageX);
-                $(this).find('span').css({
-                    top: relY,
-                    left: relX
-                });
-            }).on('mouseout', function (e) {
-                var parentOffset = $(this).offset(), relX = e.pageX - parentOffset.left, relY = e.pageY - parentOffset.top;
-                $(this).find('span').css({
-                    top: relY,
-                    left: relX
+        ```javascript
+            $(function () {
+                $('.btn-13-js').on('mouseenter', function (e) {
+                    var parentOffset = $(this).offset(), relX = e.pageX - parentOffset.left, relY = e.pageY - parentOffset.top;
+                    console.log(parentOffset);
+                    /**
+                     * $(this).offset()当前对象相对于整个页面(body)的上边和左边的固定偏移值：Object {top: 692, left: 757.84375}
+                     * e.pageX鼠标相对于当前页面的x坐标值：变化的值
+                     * e.pageY鼠标相对于当前页面的y坐标值：变化的值
+                     *
+                     */
+                    console.log(e.pageX);
+                    $(this).find('span').css({
+                        top: relY,
+                        left: relX
+                    });
+                }).on('mouseout', function (e) {
+                    var parentOffset = $(this).offset(), relX = e.pageX - parentOffset.left, relY = e.pageY - parentOffset.top;
+                    $(this).find('span').css({
+                        top: relY,
+                        left: relX
+                    });
                 });
             });
-        });
-    </pre>
+       ```   
     <p>欢迎提出建议</p>
 </div>
