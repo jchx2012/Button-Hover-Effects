@@ -1,7 +1,7 @@
 ### Button-Hover-Effects
 <p>Just Some More  Button Hover Effects</p>
 ------------------------------------
-IE9+,chrome,opera,firefox
+<p>IE9+,chrome,opera,firefox</p>
 -----------------------------------
 <p>效果查看: <a href="http://wjf444128852.github.io/demo02/MyButtonHover/index.html" target="_blank">http://wjf444128852.github.io/demo02/MyButtonHover/</a></p>
 <div>
@@ -19,6 +19,7 @@ IE9+,chrome,opera,firefox
         }
     </pre>
     <pre>
+        <p>最后一个按钮的JS</p>
         $(function () {
             $('.btn-13-js').on('mouseenter', function (e) {
                 var parentOffset = $(this).offset(), relX = e.pageX - parentOffset.left, relY = e.pageY - parentOffset.top;
