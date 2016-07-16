@@ -14,8 +14,8 @@
         border-color: #611c19 transparent transparent transparent;
         /***********最后一个用到jQuery*************/
         .btn-13-js:hover span {
-            width: 525px;/***525是按钮对角线的最大长度(三角函数)Math.sqrt(宽度的平方+高度的平方)再乘以2***/
-            height: 525px;
+            width: 562.5px;/***525是按钮对角线的最大长度(三角函数)Math.sqrt(宽度的平方+高度的平方)再开平方***/
+            height: 562.5px;
         }
     </pre>
     <pre>
